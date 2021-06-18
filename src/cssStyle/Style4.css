@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+}
+.headline{
+    margin-bottom: 15px;
+}
+.addtable{
+    width: 50%;
+    margin-top: 20px;
+}
+
+tr{
+    height: 60px;
+}
+td:nth-child(2){
+    width: 300px;
+}
+td:nth-child(1){
+    font-weight: 900;
+}
+select{
+    height: 25px;
+}
+
+input[type="text"],.select{
+    width: 250px;
+    /* padding-left: 10px; */
+}
+
+input[type="radio"]{
+    margin: 0px 10px 0px 0px;
+}
+.radiolable{
+    padding-right: 40px;
+}
+input[type="submit"]{
+    width: 200px;
+}
+

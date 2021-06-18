@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.searchBar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchBar div{
+    width: 150px;
+}
+.searchBar input{
+    width: 150px;
+}
+select{
+    width: 150px;
+}
+
+.searchbtn{
+width: 80px;
+float: right;
+height: 25px;
+}
+.pagination{
+    width: 100%;
+    margin: 10px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.pageNum{
+    display: flex;
+    margin:5px auto;
+    align-items: center;
+    height: 30px;
+}
+.active{
+    background-color: blue;
+    color: white;
+    margin: 0px 10px;
+    text-decoration: underline;
+    text-underline-position: below;
+}
+.active,.normal{
+    width: 20px;
+    height: 20px;
+    border-right: 1px solid black;
+}
+.direction{
+    font-size: 15px;
+}
+.download{
+    width: 200px;
+    height: 40px;
+}
+.btndownload{
+    width: 100%;
+    height:100%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+   
+}
+.fixheight{
+    height: 370px;
+}
+tr{
+    height: 40px;
+}
+th{
+    background-color: lightblue;
+}
+
+td,th{
+    padding-left: 10px;
+}

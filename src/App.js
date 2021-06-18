@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import LoginAccountPage from './Components/LoginAccountPage/LoginAccountPage';
+import CreateAccountPage from './Components/CreateAccountPage/CreateAccountPage';
+import CommonPage from './Components/CommonPage/CommonPage';
+import { Redirect, Route, Switch } from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Switch>
+    <Route exact path="/loginAccountPage" render={()=> <LoginAccountPage text="LoginAccountPage" />} ></Route>
+
+    <Route exact path="/createAccountPage"  render={()=> <CreateAccountPage text="CreateAccountPage" />} ></Route>
+
+    <Route exact path="/commonPage/addStudent" render={()=><CommonPage text="addStudent" />} ></Route>
+
+    <Route exact path="/commonPage/editStudentData/:id" render={()=><CommonPage text="editStudentData" />} ></Route>
+
+    <Route exact path="/commonPage" render={()=><CommonPage text="viewStudent" />} ></Route>
+    
+    <Redirect to="/loginAccountPage"></Redirect>
+    </Switch>
     </div>
   );
 }

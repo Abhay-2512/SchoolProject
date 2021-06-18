@@ -1,0 +1,414 @@
+{
+  "AllStudentData": [
+    {
+      "Username": "abhay",
+      "Dob": "2021-06-16T18:30:00.000Z",
+      "Schoolname": "",
+      "Class": "",
+      "Division": "",
+      "Active": false,
+      "Inactive": true,
+      "id": 1
+    },
+    {
+      "Username": "abhay",
+      "Dob": "2021-06-16T18:30:00.000Z",
+      "Schoolname": "",
+      "Class": "",
+      "Division": "",
+      "Active": true,
+      "Inactive": false,
+      "id": 2
+    },
+    {
+      "Username": "AKSHAY BOKADE",
+      "Dob": "2021-05-31T18:30:00.000Z",
+      "Schoolname": "karmavir",
+      "Class": "3",
+      "Division": "B",
+      "Active": false,
+      "Inactive": true,
+      "id": 3
+    },
+    {
+      "Username": "dvjkdbjkv",
+      "Dob": "2021-06-01T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "A",
+      "Active": true,
+      "Inactive": false,
+      "id": 4
+    },
+    {
+      "Username": "ndjkjsbkbskj",
+      "Dob": "2021-06-07T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "A",
+      "Active": true,
+      "Inactive": false,
+      "id": 5
+    },
+    {
+      "Username": "bhcvsab",
+      "Dob": "2021-05-31T18:30:00.000Z",
+      "Schoolname": "swami",
+      "Class": "1",
+      "Division": "B",
+      "Active": false,
+      "Inactive": true,
+      "id": 6
+    },
+    {
+      "Username": "dvhj",
+      "Dob": "2021-06-07T18:30:00.000Z",
+      "Schoolname": "swami",
+      "Class": "2",
+      "Division": "A",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 7
+    },
+    {
+      "Username": "bajsvbcjhbsa",
+      "Dob": "2021-06-15T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "B",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 8
+    },
+    {
+      "Username": "sabhjbfvasf",
+      "Dob": "2021-06-10T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "B",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 9
+    },
+    {
+      "Username": "bjvbkjsb",
+      "Dob": "2021-06-21T18:30:00.000Z",
+      "Schoolname": "swami",
+      "Class": "2",
+      "Division": "B",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 10
+    },
+    {
+      "Username": "nkhjgjgk",
+      "Dob": "2021-06-02T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "3",
+      "Division": "B",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 11
+    },
+    {
+      "Username": "vhdgdhjghl;j",
+      "Dob": "2021-06-01T18:30:00.000Z",
+      "Schoolname": "swami",
+      "Class": "1",
+      "Division": "C",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 12
+    },
+    {
+      "Username": "vhvjh'klkjgj",
+      "Dob": "2021-06-10T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "A",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 13
+    },
+    {
+      "Username": " nmvhchgcghyf",
+      "Dob": "2021-06-15T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "2",
+      "Division": "A",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 14
+    },
+    {
+      "Username": "vhftdtdyf",
+      "Dob": "2021-06-08T18:30:00.000Z",
+      "Schoolname": "swami",
+      "Class": "3",
+      "Division": "B",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 15
+    },
+    {
+      "Username": " hfghdfgstrd",
+      "Dob": "2021-06-01T18:30:00.000Z",
+      "Schoolname": "swami",
+      "Class": "1",
+      "Division": "A",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 16
+    },
+    {
+      "Username": "xdffgdgd",
+      "Dob": "2021-06-15T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "B",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 17
+    },
+    {
+      "Username": "vhjhjfjf",
+      "Dob": "2021-06-09T18:30:00.000Z",
+      "Schoolname": "swami",
+      "Class": "2",
+      "Division": "A",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 18
+    },
+    {
+      "Username": "cfgsfdghghkj",
+      "Dob": "2021-06-01T18:30:00.000Z",
+      "Schoolname": "swami",
+      "Class": "2",
+      "Division": "B",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 19
+    },
+    {
+      "Username": "cdjhkjljkjh",
+      "Dob": "2021-06-08T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "2",
+      "Division": "A",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 20
+    },
+    {
+      "Username": "vhfdgfzfhj",
+      "Dob": "2021-06-01T18:30:00.000Z",
+      "Schoolname": "swami",
+      "Class": "2",
+      "Division": "B",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 21
+    },
+    {
+      "Username": "sateesh punna",
+      "Dob": "2021-06-01T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "A",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 22
+    },
+    {
+      "Username": "dbvhjdbshhj",
+      "Dob": "2021-06-22T18:30:00.000Z",
+      "Schoolname": "swami",
+      "Class": "1",
+      "Division": "A",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 23
+    },
+    {
+      "Username": "bshjvbshavu",
+      "Dob": "2021-06-11T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "A",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 24
+    },
+    {
+      "Username": "bsjbhsav",
+      "Dob": "2021-06-24T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "B",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 25
+    },
+    {
+      "Username": "dbvhjhvhj",
+      "Dob": "2021-06-14T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "A",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 26
+    },
+    {
+      "Username": "bvjbsvhjbs",
+      "Dob": "2021-06-07T18:30:00.000Z",
+      "Schoolname": "swami",
+      "Class": "1",
+      "Division": "B",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 27
+    },
+    {
+      "Username": "bfhjbshfv",
+      "Dob": "2021-06-07T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "B",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 28
+    },
+    {
+      "Username": "bchjavsch",
+      "Dob": "2021-05-31T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "B",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 29
+    },
+    {
+      "Username": "AVB",
+      "Dob": "2020-12-24T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "A",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 30
+    },
+    {
+      "Username": "AAAA",
+      "Dob": "2021-06-01T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "A",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 31
+    },
+    {
+      "Username": "AABBH",
+      "Dob": "2021-06-17T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "A",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 32
+    },
+    {
+      "Username": "BBBB",
+      "Dob": "Fri Jun 18 2021 00:00:00 GMT+0530 (India Standard Time)",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "A",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 33
+    },
+    {
+      "Username": "aababab",
+      "Dob": "Thu Jun 03 2021 00:00:00 GMT+0530 (India Standard Time)",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "A",
+      "Active": "Active",
+      "Inactive": "InActive",
+      "id": 34
+    },
+    {
+      "Username": "ababab",
+      "Dob": "Fri Jun 18 2021 00:00:00 GMT+0530 (India Standard Time)",
+      "Schoolname": "navbhar",
+      "Class": "2",
+      "Division": "A",
+      "Active": false,
+      "Inactive": true,
+      "id": 35
+    },
+    {
+      "Username": "bokade abhay vijay",
+      "Dob": "2021-06-03T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "A",
+      "Active": false,
+      "Inactive": true,
+      "id": 36
+    },
+    {
+      "Username": "AVBAVB",
+      "Dob": "2021-06-11T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "2",
+      "Division": "A",
+      "Active": false,
+      "Inactive": true,
+      "id": 37
+    },
+    {
+      "Username": "bdhfbdv",
+      "Dob": "2021-06-03T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "B",
+      "Active": true,
+      "Inactive": false,
+      "id": 38
+    },
+    {
+      "Username": "bdhbvhj",
+      "Dob": "2021-06-02T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "A",
+      "Active": true,
+      "Inactive": false,
+      "id": 39
+    },
+    {
+      "Username": "akshay bokade",
+      "Dob": "2021-06-17T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "A",
+      "Active": false,
+      "Inactive": true,
+      "id": 40
+    },
+    {
+      "Username": "akshay BOKADE",
+      "Dob": "2021-06-17T18:30:00.000Z",
+      "Schoolname": "navbhar",
+      "Class": "1",
+      "Division": "A",
+      "Active": false,
+      "Inactive": true,
+      "id": 41
+    }
+  ]
+}
