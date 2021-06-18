@@ -84,8 +84,14 @@ tr{
 }
 th{
     background-color: lightblue;
+    text-align: left;
 }
 
 td,th{
-    padding-left: 10px;
+    padding-left: 6px;
+}
+
+.linkbtn{
+    color: blue;
+    text-decoration: underline;
 }

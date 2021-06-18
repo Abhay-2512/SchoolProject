@@ -14,13 +14,15 @@ function EditStudentData() {
     const { id } = useParams();
     let Username, Schoolname, Class, Division, Active, Inactive;
     const num = id.substring(1);
-    const Num = Number(num) - 1;
 
 
     useEffect(() => {
         axios.get(URL).then((res) => {
             let VerifyUser = res.data;
-            const UserData = VerifyUser[Num];
+            const UserDetail=VerifyUser.filter((ele)=>{
+                return Number(ele.id)===Number(num)
+            })
+            const UserData=UserDetail[0];
             Username.current.value = UserData.Username;
             console.log(UserData.Username);
             let mydata= new Date(Date.parse(UserData.Dob));

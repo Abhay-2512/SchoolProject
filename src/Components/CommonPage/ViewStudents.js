@@ -12,6 +12,7 @@ function ViewStudents() {
     const [studentData, setstudentData] = useState([])
     const [paginatedData, setPaginatedData] = useState([])
     const [CurrPage, setCurrPage] = useState(1)
+    const [refresh,setRefresh]=useState({})
     const [string, setString] = useState("")
     const history = useHistory();
     let pageSize = 8;
@@ -19,17 +20,17 @@ function ViewStudents() {
 
     useEffect(() => {
         axios.get(URL).then((res) => {
-            console.log(res.data)
+            // console.log(res.data)
             let myData = res.data;
             setstudentData(myData)
             let firstPage = myData.slice(0, pageSize);
-            console.log(firstPage);
+            // console.log(firstPage);
             setPaginatedData(firstPage)
         }).catch((err) => {
             console.log(err)
         })
-    }, [pageSize])
-    console.log(paginatedData);
+    }, [pageSize,refresh])
+    // console.log(paginatedData);
 
     // PAGINATION START HERE
 
@@ -43,7 +44,7 @@ function ViewStudents() {
     const pagination = (pageNo) => {
         setCurrPage(pageNo)
         const startIndex = (pageNo - 1) * pageSize;
-        console.log(startIndex);
+        // console.log(startIndex);
         const paginationPost = studentData.slice(startIndex, startIndex + pageSize);
         setPaginatedData(paginationPost)
     }
@@ -54,7 +55,8 @@ function ViewStudents() {
 
     const deleteStudent = (id) => {
         axios.delete(`${URL}/${id}`).then((res) => {
-            console.log(res.data)
+            // console.log(res.data)
+            setRefresh(res.data);
         }).catch((err) => console.log(err))
     }
     const showCandidateDetails = (id) => {
@@ -124,7 +126,7 @@ function ViewStudents() {
                 </div>
                 <div className="pagination">
                     <nav className="pageNum">
-                        <p onClick={() => pagination(CurrPage - 1)}><FaLessThanEqual className="direction" /> </p>
+                        <p onClick={() => (CurrPage>1)?pagination(CurrPage - 1):pagination(CurrPage)}><FaLessThanEqual className="direction" /> </p>
                         {pageCountArr.map((page) => {
                             return (
                                 <p key={page} className={page === CurrPage ? "active" : "normal"}>
@@ -132,7 +134,7 @@ function ViewStudents() {
                                 </p>)
                         })}
 
-                        <p onClick={() => pagination(CurrPage + 1)}><FaGreaterThanEqual className="direction" /> </p>
+                        <p onClick={() => (CurrPage<pageCount)?pagination(CurrPage + 1):pagination(CurrPage)}><FaGreaterThanEqual className="direction" /> </p>
                     </nav>
                 </div>
                 <div className="download">

@@ -3,7 +3,7 @@ import '../../cssStyle/Style3.css'
 
 function DataTable({tableData,detail,deleteStudent}) {
     const ageCalculator = (date) => [
-        console.log(date)
+        // console.log(date)
     ]
     const checkStatus = (active, inactive) => {
         if (active === true) {
@@ -24,7 +24,7 @@ function DataTable({tableData,detail,deleteStudent}) {
                                     <th>Class</th>
                                     <th>Division</th>
                                     <th>Status</th>
-                                    <th>other</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -38,7 +38,7 @@ function DataTable({tableData,detail,deleteStudent}) {
                                             <td>{ele.Class}</td>
                                             <td>{ele.Division}</td>
                                             <td>{checkStatus(ele.Active, ele.Inactive)}</td>
-                                            <td><span onClick={()=>detail(ele.id)}>Edit</span><span onClick={()=>deleteStudent(ele.id)}>Delete</span></td>
+                                            <td><span className="linkbtn" onClick={()=>detail(ele.id)}>Edit</span>   <span className="linkbtn" onClick={()=>deleteStudent(ele.id)}>Delete</span></td>
                                         </tr>
                                     )
                                 })}
