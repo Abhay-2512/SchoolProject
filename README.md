@@ -1,5 +1,18 @@
 # Getting Started with Create React App
 
+# To Run This School App Follow Steps
+
+1.npm start
+
+2.npm i -g json-server
+
+3.npx json-server --watch db.json --port 3006
+
+4.App is Ready To Use thank you.
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
