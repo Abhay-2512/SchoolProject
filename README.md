@@ -2,7 +2,7 @@
 
 # To Run This School App Follow Steps
 
-1.npm i node modules
+1.npm install 
 and then start server by commond
 npm start
 
