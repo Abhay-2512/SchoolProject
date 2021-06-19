@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 import { FaLessThanEqual, FaGreaterThanEqual } from "react-icons/fa";
 import DataTable from './DataTable';
 
-let URL = "http://localhost:3006/AllStudentData";
+let URL = "https://my-json-server.typicode.com/abhay-2512/myserver/AllStudentData";
 
 function ViewStudents() {
 

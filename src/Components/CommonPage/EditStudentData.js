@@ -5,7 +5,7 @@ import axios from 'axios';
 import DatePicker from 'react-date-picker';
 
 
-let URL = "http://localhost:3006/AllStudentData";
+let URL = "https://my-json-server.typicode.com/abhay-2512/myserver/AllStudentData";
 
 
 function EditStudentData() {
@@ -56,7 +56,7 @@ function EditStudentData() {
             Active: Active.current.checked,
             Inactive: Inactive.current.checked
         }
-        axios.put("http://localhost:3006/AllStudentData/"+num, studentData).then((res) => {
+        axios.put("https://my-json-server.typicode.com/abhay-2512/myserver/AllStudentData/"+num, studentData).then((res) => {
             console.log(res.statusText)
         }).catch((err) => {
             
