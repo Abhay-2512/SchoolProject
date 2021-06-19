@@ -8,11 +8,7 @@
 and then start server by commond
 npm start
 
-3.npm i -g json-server
-
-4.npx json-server --watch db.json --port 3006
-
-5.App is Ready To Use thank you.
+3.App is Ready To Use thank you.
 
 
 
