@@ -2,15 +2,17 @@
 
 # To Run This School App Follow Steps
 
-1.npm install 
+1.first change Zip Downloaded the Folder name SchoolProject-master to school-project
+
+2.After Changing Folder name to school-project Open Folder by VS-Code IDE and Install this command : npm install 
 and then start server by commond
 npm start
 
-2.npm i -g json-server
+3.npm i -g json-server
 
-3.npx json-server --watch db.json --port 3006
+4.npx json-server --watch db.json --port 3006
 
-4.App is Ready To Use thank you.
+5.App is Ready To Use thank you.
 
 
 
