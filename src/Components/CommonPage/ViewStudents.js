@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState,useRef } from 'react'
 import '../../cssStyle/Style3.css'
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
@@ -14,7 +14,13 @@ function ViewStudents() {
     const [CurrPage, setCurrPage] = useState(1)
     const [refresh,setRefresh]=useState({})
     const [string, setString] = useState("")
+    // console.log(string);
     const history = useHistory();
+    let Username=useRef()
+    let Age=useRef()
+    let Class=useRef()
+    let Schoolname=useRef()
+    let Division=useRef()
     let pageSize = 8;
 
 
@@ -52,7 +58,7 @@ function ViewStudents() {
 
     // PAGINATION END HERE
 
-
+    // DELETE BUTTON LOGIC START HERE
     const deleteStudent = (id) => {
         axios.delete(`${URL}/${id}`).then((res) => {
             // console.log(res.data)
@@ -67,7 +73,30 @@ function ViewStudents() {
     // FILTER TABLE START HERE
 
     const searchTableData = (e) => {
-        setString(e.target.value)
+        let search1="";
+        let search2="";
+        let search3="";
+        let search4="";
+        let search5="";
+        if(Username.current.value!==""){
+            search1+=Username.current.value;
+        }
+        if(Class.current.value!==""){
+            search1+=Class.current.value;
+        }
+        if(Age.current.value!==""){
+            search1+=Age.current.value;
+        }
+        if(Schoolname.current.value!==""){
+            search1+=Schoolname.current.value;
+        }
+        if(Division.current.value!==""){
+            search1+=Division.current.value;
+        }
+
+        let AllData=search1+search2+search3+search4+search5;
+        setString(AllData);
+        
 
     }
     const search = (rows) => {
@@ -85,21 +114,21 @@ function ViewStudents() {
         <div className="main">
             <div className="searchBar">
                 <div>
-                    <input type="text" placeholder="Name" onChange={searchTableData} ></input>
+                    <input type="text" placeholder="Name" ref={Username}  ></input>
                 </div>
                 <div>
-                    <input type="text" placeholder="Age" onChange={searchTableData} ></input>
+                    <input type="text" placeholder="Age" ref={Age}  ></input>
                 </div>
                 <div>
-                    <select onChange={searchTableData}>
+                    <select ref={Schoolname} >
                         <option value="" >Select school</option>
-                        <option value="navbhar">School01</option>
-                        <option value="swami">School02</option>
-                        <option value="karmavir">School03</option>
+                        <option value="Nav Bharat Vidyalaya">Nav Bharat Vidyalaya</option>
+                        <option value="Swami Vivekanand Vidyalaya">Swami Vivekanand Vidyalaya</option>
+                        <option value="karmavir Vidyalaya">karmavir Vidyalaya</option>
                     </select>
                 </div>
                 <div>
-                    <select onChange={searchTableData} >
+                    <select ref={Class}  >
                         <option value="">Select class</option>
                         <option value="1">Class01</option>
                         <option value="2">Class02</option>
@@ -107,7 +136,7 @@ function ViewStudents() {
                     </select>
                 </div>
                 <div>
-                    <select onChange={searchTableData}>
+                    <select ref={Division} >
                         <option value="">Select division</option>
                         <option value="A">A</option>
                         <option value="B">B</option>
@@ -115,7 +144,7 @@ function ViewStudents() {
                     </select>
                 </div>
                 <div className="btnsearch">
-                    <button type="button" className="searchbtn">Search</button>
+                    <button type="button" className="searchbtn" onClick={searchTableData}>Search</button>
                 </div>
             </div>
             <div>

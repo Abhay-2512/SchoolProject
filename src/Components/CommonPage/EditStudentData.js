@@ -24,7 +24,7 @@ function EditStudentData() {
             })
             const UserData=UserDetail[0];
             Username.current.value = UserData.Username;
-            console.log(UserData.Username);
+            // console.log(UserData.Username);
             let mydata= new Date(Date.parse(UserData.Dob));
             setStartDate(mydata)
             Schoolname.current.value = UserData.Schoolname;
@@ -42,7 +42,7 @@ function EditStudentData() {
             console.log(err)
         })
 
-    }, [])
+    }, [Username,Schoolname,Class,Division,Active,Inactive,num])
 
 
     const addStudentData = (e) => {

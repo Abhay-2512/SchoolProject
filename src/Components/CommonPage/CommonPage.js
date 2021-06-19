@@ -8,6 +8,7 @@ import EditStudentData from './EditStudentData';
 
 
 function CommonPage({text}) {
+    
     let screenHeight=window.innerHeight;
 
     return (
