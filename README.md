@@ -2,7 +2,9 @@
 
 # To Run This School App Follow Steps
 
-1.npm start
+1.npm i node modules
+and then start server by commond
+npm start
 
 2.npm i -g json-server
 
